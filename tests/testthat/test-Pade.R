@@ -26,8 +26,13 @@ test_that("Pade approximant coefficients are calculated properly", {
   expect_equal(SIN_Pade56_Estimate[[2]], SIN_Pade56Denom)
 })
 
-context("Testing Coefficient Length Check")
+context("Testing Error Trapping")
 test_that("Error is thrown when not enough coefficients are passed", {
   expect_error(Pade(4, 4, LOG1P_0_Taylor), "Not enough Taylor series coefficients provided.")
   expect_error(Pade(7, 6, SIN_Taylor), "Not enough Taylor series coefficients provided.")
+})
+
+test_that("Polynomial order must be integral", {
+  expect_error(Pade(4.2, 4, LOG1P_0_Taylor), "Polynomial orders need to be integers.")
+  expect_error(Pade(4, 3.4, LOG1P_0_Taylor), "Polynomial orders need to be integers.")
 })

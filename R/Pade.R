@@ -1,4 +1,5 @@
 Pade <- function(L, M, A){
+  if (floor(L) != L || floor(M) != M) stop ("Polynomial orders need to be integers.")
   Lp1 <- L + 1
   MatSize <- Lp1 + M
   if(length(A) < MatSize) stop ("Not enough Taylor series coefficients provided.")
