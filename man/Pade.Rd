@@ -16,7 +16,7 @@ Pade(L, M, A)
 \details{
   As the Taylor series expansion is the \dQuote{best} polynomial approximation to a function, the Padè approximants are the \dQuote{best} rational function approximations to the original function. The Padè approximant often has a wider radius of convergence than the corresponding Taylor series, and can even converge where the Taylor series does not, which makes it very suitable for computer-based numerical analysis.
 
-  The \eqn{L, M} Padè approximant to a Taylor series \eqn{A(x)} is the quotient \deqn{\left[L / M\right] = \frac{P_L(x)}{Q_M(x)}}{[L / M] = P_L(x) / Q_M(x)} where where \eqn{P(x)} is of order \eqn{L} and \eqn{Q(x)} is of order \eqn{M}. In this case:\deqn{\A(x) - \frac{P_L(x)}{Q_M(x)} = \mathcal{O}\left(x^{L + M + 1}\right)}{A(x) - P_L(x) / Q_M(X) = O(x^{L + M + 1})}
+  The \eqn{L, M} Padè approximant to a Taylor series \eqn{A(x)} is the quotient \deqn{\left[L / M\right] = \frac{P_L(x)}{Q_M(x)}}{[L / M] = P_L(x) / Q_M(x)} where where \eqn{P(x)} is of order \eqn{L} and \eqn{Q(x)} is of order \eqn{M}. In this case:\deqn{A(x) - \frac{P_L(x)}{Q_M(x)} = \mathcal{O}\left(x^{L + M + 1}\right)}{A(x) - P_L(x) / Q_M(X) = O(x^{L + M + 1})}
 
   When \eqn{q_0} is defined as \eqn{1}, there is a unique solution to the system of linear equations which can be used to calculate the coefficients.
 
@@ -37,14 +37,14 @@ Pade(L, M, A)
   This package provides similar functionality to the \code{\link[pracma]{pade}} function in the \pkg{pracma} package. However, it does not allow computation of coefficients beyond the supplied Taylor coefficients and it expects its input and provides its output in ascending, instead of descending, order.
 }
 \examples{
-A <- c(1, 1 / factorial(seq_len(10))) ## Taylor (Maclaurin) sequence for e^x up to x^{10} around x_0 = 0
+A <- 1 / factorial(seq_len(11) - 1) ## Taylor sequence for e^x up to x^{10} around x_0 = 0
 Z <- Pade(5, 5, A)
-print(Z)                              ## Padè approximant of order [5 / 5]
-X <- -.01                             ## Test value
-Actual <- exp(X)                      ## Proper value
+print(Z)                            ## Padè approximant of order [5 / 5]
+X <- -.01                           ## Test value
+Actual <- exp(X)                    ## Proper value
 print(Actual, digits = 16)
 Estimate <- sum(Z[[1]] * X ^ seq_along(Z[[1]])) / sum(Z[[2]] * X ^ seq_along(Z[[2]]))
-print(Estimate, digits = 16)          ## Approximant value
+print(Estimate, digits = 16)        ## Approximant value
 all.equal(Actual, Estimate)
 }
 \keyword{NumericalMathematics}
