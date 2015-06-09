@@ -1,14 +1,14 @@
-Pade <- function(m, n, TayCoeff){
-  mp1 <- m + 1
-  MatSize <- mp1 + n
-  if(length(TayCoeff) < MatSize) stop ("Not enough Taylor series coefficients provided.")
-  A <- matrix(0, ncol = MatSize, nrow = MatSize)
-  A[1:mp1, 1:mp1] <- -diag(m + 1)
-  for (i in seq_len(n)){
-    A[, mp1 + i] <- c(rep.int(0, i), head(TayCoeff, (MatSize - i)))
+Pade <- function(L, M, A){
+  Lp1 <- L + 1
+  MatSize <- Lp1 + M
+  if(length(A) < MatSize) stop ("Not enough Taylor series coefficients provided.")
+  PQ <- matrix(0, ncol = MatSize, nrow = MatSize)
+  PQ[1:Lp1, 1:Lp1] <- -diag(Lp1)
+  for (i in seq_len(M)){
+    PQ[, Lp1 + i] <- c(rep.int(0, i), head(A, (MatSize - i)))
   }
-  PadeCoeff <- solve(A, -head(TayCoeff, MatSize))
-  Numer <- head(PadeCoeff, mp1)
-  Denom <- c(1, tail(PadeCoeff, n))
+  PadeCoeff <- solve(PQ, -head(A, MatSize))
+  Numer <- head(PadeCoeff, Lp1)
+  Denom <- c(1, tail(PadeCoeff, M))
   return(list(Px = Numer, Qx = Denom))
 }

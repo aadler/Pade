@@ -3,18 +3,24 @@
 \alias{Pade}
 \title{Padè Approximant Coefficients}
 \description{
-Given Taylor series coefficients of up to order \eqn{t}, the function will calculate the Padè \eqn{\left[m / n\right]}{[m / n]} approximant coefficients so long as \eqn{m + n \leq t}{m + n <= t}.
+Given Taylor series coefficients \eqn{a_n} from \eqn{n = 0} up to \eqn{n = T}, the function will calculate the Padè \eqn{\left[m / n\right]}{[L / M]} approximant coefficients so long as \eqn{L + M \leq T}{L + M ≤ T}.
 }
 \usage{
-Pade(m, n, TayCoeff)
+Pade(L, M, A)
 }
 \arguments{
-  \item{m}{Order of Padè numerator}
-  \item{n}{Order of Padè denominator}
-  \item{TayCoeff}{vector of Taylor series coefficients, starting at \eqn{x^0}}
+  \item{L}{Order of Padè numerator}
+  \item{M}{Order of Padè denominator}
+  \item{A}{vector of Taylor series coefficients, starting at \eqn{x^0}}
 }
 \details{
-  As the Taylor series expansion is the \dQuote{best} polynomial approximation to a function, the Padè approximants are the \dQuote{best} rational function approximations to the original function. A Padè approximant of order \eqn{\left[m / n\right]}{[m / n]} is the quotient of two polynomials, \eqn{P(x)} and \eqn{Q(x)}, where \eqn{P(x)} is of order \eqn{m} and \eqn{Q(x)} is of order \eqn{n}. The Padè approximant often has a wider radius of convergence than the corresponding Taylor series, and can even converge where the Taylor series does not, which makes it very suitable for computer-based numerical analysis.
+  As the Taylor series expansion is the \dQuote{best} polynomial approximation to a function, the Padè approximants are the \dQuote{best} rational function approximations to the original function. The Padè approximant often has a wider radius of convergence than the corresponding Taylor series, and can even converge where the Taylor series does not, which makes it very suitable for computer-based numerical analysis.
+
+  The \eqn{L, M} Padè approximant to a Taylor series \eqn{A(x)} is the quotient \deqn{\left[L / M\right] = \frac{P_L(x)}{Q_M(x)}}{[L / M] = P_L(x) / Q_M(x)} where where \eqn{P(x)} is of order \eqn{L} and \eqn{Q(x)} is of order \eqn{M}. In this case:\deqn{\A(x) - \frac{P_L(x)}{Q_M(x)} = \mathcal{O}\left(x^{L + M + 1}\right)}{A(x) - P_L(x) / Q_M(X) = O(x^{L + M + 1})}
+
+  When \eqn{q_0} is defined as \eqn{1}, there is a unique solution to the system of linear equations which can be used to calculate the coefficients.
+
+  The function accepts a vector \code{A} of length \code{T + 1}, composed of the \eqn{a_n} of the of Taylor series \deqn{A(x) = \sum_{j=0}^T a_j x^j}{A = Σ(j = 0 to T) a_j x^j} and returns a list of two elements, \code{Px} and \code{Qx}, the Padè numerator and denominator coefficients respectively, as long as \eqn{L + M \leq T}{L + M ≤ T}.
 }
 \value{
   \code{Pade} returns a list with two entries:
