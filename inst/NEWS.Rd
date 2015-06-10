@@ -2,7 +2,7 @@
 \alias{NEWS}
 \title{NEWS file for the \code{\link[=Pade]{Pade}} package}
 
-\section{Changes in version 0.1-2 (TBD)}{
+\section{Changes in version 0.1-2 (2015-06-10)}{
   \subsection{Updates}{
   \itemize{
     \item Corrected use of grave to proper aigu (Thanks to Dirk Eddelbuettel)
