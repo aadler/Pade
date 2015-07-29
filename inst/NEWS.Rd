@@ -2,6 +2,14 @@
 \alias{NEWS}
 \title{NEWS file for the \code{\link[pkg:Pade]{Pade}} package}
 
+\section{Changes in version 0.1-4 (2015-07-29)}{
+  \subsection{Bug fixes}{
+    \itemize{
+      \item{Correct the example to evaluate from \eqn{x^0}, not \eqn{x^1}, by appending \code{-1} to the \code{seq_along} call. (Issue #1: Thanks to Anonymous)}
+    }
+  }
+}
+
 \section{Changes in version 0.1-3 (2015-06-30)}{
   \subsection{Updates}{
     \itemize{
