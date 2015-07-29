@@ -43,7 +43,7 @@ print(Z)                            ## Padé approximant of order [5 / 5]
 X <- -.01                           ## Test value
 Actual <- exp(X)                    ## Proper value
 print(Actual, digits = 16)
-Estimate <- sum(Z[[1]] * X ^ seq_along(Z[[1]])) / sum(Z[[2]] * X ^ seq_along(Z[[2]]))
+Estimate <- sum(Z[[1]] * X ^ (seq_along(Z[[1]]) - 1)) / sum(Z[[2]] * X ^ (seq_along(Z[[2]]) - 1))
 print(Estimate, digits = 16)        ## Approximant value
 all.equal(Actual, Estimate)
 }
