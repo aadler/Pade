@@ -1,3 +1,4 @@
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 ##Introduction
 For a given function, its The [Taylor series](https://en.wikipedia.org/wiki/Taylor_series) is the "best" polynomial representations of that function. If the function is being evaluated at 0, the Taylor series representation is also called the Maclaurin series. The error is proportional to the first "left-off" term. Also, the series is only a good estimate in a small radius around the point for which it is calculated (e.g. 0 for a Maclaurin series).
 
