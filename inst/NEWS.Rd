@@ -2,7 +2,23 @@
 \alias{NEWS}
 \title{NEWS file for the \code{\link[pkg:Pade]{Pade}} package}
 
-\section{Changes in version 0.1.5 (2017-10-07)}{
+\section{Changes in version 1.0.0 (2019-11-07)}{
+  \subsection{Added}{
+    \itemize{
+      \item{Added Startup message. Unfortunately, I've found too many times
+      where my packages have been used without proper citation.}
+      \item{Added CRAN version release and date badge}
+    }
+  }
+  \subsection{Changed}{
+    \itemize{
+      \item{Incremented to release version}
+      \item{Internal tweaks to project files}
+    }
+  }
+}
+
+\section{Changes in version 0.1.5 (2019-10-07)}{
   \subsection{Changed}{
     \itemize{
       \item{Moved primary repository from Bitbucket to Github}
@@ -18,7 +34,7 @@
 \section{Changes in version 0.1-4 (2015-07-29)}{
   \subsection{Bug fixes}{
     \itemize{
-      \item{Correct the example to evaluate from \eqn{x^0}, not \eqn{x^1}, by appending \code{-1} to the \code{seq_along} call. (Issue #1: Thanks to Anonymous)}
+      \item{Correct the example to evaluate from \eqn{x^0}, not \eqn{x^1}, by appending \code{-1} to the \code{seq_along} call. (Issue #1: Thanks to Anonymous. Note: In move to github, this issue could not be transferred.)}
     }
   }
 }
