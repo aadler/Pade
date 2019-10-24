@@ -1,4 +1,4 @@
-[![Project Status: Active The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2033/badge)](https://bestpractices.coreinfrastructure.org/projects/2033)
+[![Project Status: Active The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)[![CRAN Latest Version & Release](https://www.r-pkg.org/badges/version-last-release/Pade)](https://CRAN.R-project.org/package=Pade)[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2033/badge)](https://bestpractices.coreinfrastructure.org/projects/2033)
 
 # Pade
 
