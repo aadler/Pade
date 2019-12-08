@@ -2,7 +2,7 @@ Package: Pade
 Type: Package
 Title: Padé Approximant Coefficients
 Version: 1.0.0
-Date: 2019-11-07
+Date: 2019-12-08
 Authors@R: c(person(given="Avraham", family="Adler", role=c("aut", "cph", "cre"), email="Avraham.Adler@gmail.com", comment = c(ORCID = "0000-0002-3039-0703")))
 Description: Given a vector of Taylor series coefficients of sufficient length as input, the function returns the numerator and denominator coefficients for the Padé approximant of appropriate order.
 License: GPL (>= 2) | BSD_2_clause + file LICENSE

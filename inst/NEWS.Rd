@@ -2,11 +2,9 @@
 \alias{NEWS}
 \title{NEWS file for the \code{\link[pkg:Pade]{Pade}} package}
 
-\section{Changes in version 1.0.0 (2019-11-07)}{
+\section{Changes in version 1.0.0 (2019-12-08)}{
   \subsection{Added}{
     \itemize{
-      \item{Added Startup message. Unfortunately, I've found too many times
-      where my packages have been used without proper citation.}
       \item{Added CRAN version release and date badge}
     }
   }
