@@ -2,6 +2,14 @@
 \alias{NEWS}
 \title{NEWS file for the \code{\link[pkg:Pade]{Pade}} package}
 
+\section{Changes in version 1.0.1.9999 (2020-01-08)}{
+  \subsection{Added}{
+    \itemize{
+      \item{Added source and ISBN to Description per CRAN request}
+    }
+  }
+}
+
 \section{Changes in version 1.0.0 (2019-12-08)}{
   \subsection{Added}{
     \itemize{
