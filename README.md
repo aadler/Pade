@@ -2,6 +2,7 @@
 [![CRAN Latest Version & Release](https://www.r-pkg.org/badges/version-last-release/Pade)](https://CRAN.R-project.org/package=Pade)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2033/badge)](https://bestpractices.coreinfrastructure.org/projects/2033)
 [![Travis build status](https://travis-ci.com/aadler/Pade.svg?branch=master)](https://travis-ci.com/aadler/Pade)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/aadler/Pade?branch=master&svg=true)](https://ci.appveyor.com/project/aadler/Pade)
 <!-- badges: end -->
 
 # Padé
