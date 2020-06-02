@@ -36,3 +36,11 @@ test_that("Polynomial order must be integral", {
   expect_error(Pade(4.2, 4, LOG1P_0_Taylor), "Polynomial orders need to be integers.")
   expect_error(Pade(4, 3.4, LOG1P_0_Taylor), "Polynomial orders need to be integers.")
 })
+
+context("Package Maintenance")
+test_that("Version", {
+  expect_match(toBibtex(citation('Pade')),
+               as.character(packageVersion('Pade')), fixed = TRUE, all = FALSE)
+  # expect_match(scan("../../README.md", what = 'character'),
+  #              as.character(packageVersion('Pade')), fixed = TRUE, all = FALSE)
+})
