@@ -84,7 +84,6 @@ A BibTeX entry for LaTeX users is:
     url = {https://CRAN.R-project.org/package=Pade},
   }
 ```
-
 ## Contributions
 Please ensure that all contributions comply with both [R and CRAN standards for packages](https://cran.r-project.org/doc/manuals/r-release/R-exts.html).
 
