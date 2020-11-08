@@ -8,9 +8,7 @@
 <!-- badges: end -->
 
 # Padé
-
 ## Mathematics
-
 ### Introduction
 For a given function, its
 [Taylor series](https://en.wikipedia.org/wiki/Taylor_series) is the "best"
@@ -72,7 +70,7 @@ in increasing order.
 If you use the package, please cite it as:
 
   Avraham Adler (2015). Pade: Padé Approximant Coefficients.
-  R package version 1.0.1. https://CRAN.R-project.org/package=Pade
+  R package version 1.0.2. https://CRAN.R-project.org/package=Pade
 
 A BibTeX entry for LaTeX users is:
 
@@ -81,12 +79,13 @@ A BibTeX entry for LaTeX users is:
     title = {Pade: Padé Approximant Coefficients},
     author = {Avraham Adler},
     year = {2015},
-    note = {R package version 1.0.1},
+    note = {R package version 1.0.2},
     url = {https://CRAN.R-project.org/package=Pade},
   }
 ```
 ## Contributions
-Please ensure that all contributions comply with both [R and CRAN standards for packages](https://cran.r-project.org/doc/manuals/r-release/R-exts.html).
+Please ensure that all contributions comply with both
+[R and CRAN standards for packages](https://cran.r-project.org/doc/manuals/r-release/R-exts.html).
 
 ### Versioning
 This project attempts to follow [Semantic Versioning](http://semver.org/)
