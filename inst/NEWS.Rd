@@ -6,6 +6,7 @@
   \subsection{Changed}{
     \itemize{
       \item Changed tests to be compliant with \code{testthat} 3rd edition
+      \item Cleaned up documentation
     }
   }
 }
