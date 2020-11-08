@@ -9,12 +9,12 @@ LOG1P_0_Taylor = c(0, 1, -1 / 2, 1 / 3, -1 / 4, 1 / 5, -1 / 6)
 LOG1P_0_Pade33Numer = c(0, 1, 1, 11 / 60)
 LOG1P_0_Pade33Denom = c(1, 1.5, 0.6, 0.05)
 LOG1P_0_Pade33_Estimate <- Pade(3, 3, LOG1P_0_Taylor)
-SIN_Taylor <- c(0, 1/factorial(1), 0, -1/factorial(3), 0, 1/factorial(5), 0, -1/factorial(7), 0, 1/factorial(9), 0, -1/factorial(11))
+SIN_Taylor <- c(0, 1/factorial(1), 0, -1/factorial(3), 0, 1/factorial(5), 0,
+                -1/factorial(7), 0, 1/factorial(9), 0, -1/factorial(11))
 SIN_Pade56Numer <- c(0, 1, 0, -2363/18183, 0, 12671/4363920)
 SIN_Pade56Denom <- c(1, 0, 445/12122, 0, 601/872784, 0, 121/16662240)
 SIN_Pade56_Estimate <- Pade(5, 6, SIN_Taylor)
 
-context("Testing Pade Approximant Calculations")
 test_that("Pade approximant coefficients are calculated properly", {
   expect_equal(EXP_0_Pade32_Estimate[[1]], EXP_0_Pade32Numer)
   expect_equal(EXP_0_Pade32_Estimate[[2]], EXP_0_Pade32Denom)
@@ -26,18 +26,20 @@ test_that("Pade approximant coefficients are calculated properly", {
   expect_equal(SIN_Pade56_Estimate[[2]], SIN_Pade56Denom)
 })
 
-context("Testing Error Trapping")
 test_that("Error is thrown when not enough coefficients are passed", {
-  expect_error(Pade(4, 4, LOG1P_0_Taylor), "Not enough Taylor series coefficients provided.")
-  expect_error(Pade(7, 6, SIN_Taylor), "Not enough Taylor series coefficients provided.")
+  expect_error(Pade(4, 4, LOG1P_0_Taylor),
+               "Not enough Taylor series coefficients provided.")
+  expect_error(Pade(7, 6, SIN_Taylor),
+               "Not enough Taylor series coefficients provided.")
 })
 
 test_that("Polynomial order must be integral", {
-  expect_error(Pade(4.2, 4, LOG1P_0_Taylor), "Polynomial orders need to be integers.")
-  expect_error(Pade(4, 3.4, LOG1P_0_Taylor), "Polynomial orders need to be integers.")
+  expect_error(Pade(4.2, 4, LOG1P_0_Taylor),
+               "Polynomial orders need to be integers.")
+  expect_error(Pade(4, 3.4, LOG1P_0_Taylor),
+               "Polynomial orders need to be integers.")
 })
 
-context("Package Maintenance")
 test_that("Version", {
   expect_match(toBibtex(citation('Pade')),
                as.character(packageVersion('Pade')), fixed = TRUE, all = FALSE)
