@@ -2,6 +2,14 @@
 \alias{NEWS}
 \title{NEWS file for the Pade package}
 
+\section{Changes in version 1.0.3 (2020-11-10)}{
+  \subsection{Fixed}{
+    \itemize{
+      \item Corrected CRAN requests
+    }
+  }
+}
+
 \section{Changes in version 1.0.2 (2020-11-08)}{
   \subsection{Changed}{
     \itemize{

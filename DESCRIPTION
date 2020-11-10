@@ -1,8 +1,8 @@
 Package: Pade
 Type: Package
 Title: Padé Approximant Coefficients
-Version: 1.0.2
-Date: 2020-11-08
+Version: 1.0.3
+Date: 2020-11-10
 Authors@R: c(person(given="Avraham", family="Adler",
     role=c("aut", "cph", "cre"), email="Avraham.Adler@gmail.com",
     comment = c(ORCID = "0000-0002-3039-0703")))
