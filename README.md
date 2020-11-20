@@ -5,6 +5,7 @@
 [![Travis build status](https://travis-ci.com/aadler/Pade.svg?branch=master)](https://travis-ci.com/aadler/Pade)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/aadler/Pade?branch=master&svg=true)](https://ci.appveyor.com/project/aadler/Pade)
 [![Codecov test coverage](https://codecov.io/gh/aadler/Pade/branch/master/graph/badge.svg)](https://codecov.io/gh/aadler/Pade?branch=master)
+[![R build status](https://github.com/aadler/Pade/workflows/R-CMD-check/badge.svg)](https://github.com/aadler/Pade/actions)
 <!-- badges: end -->
 
 # Padé
