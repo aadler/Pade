@@ -68,6 +68,7 @@ jobs:
         run: |
           remotes::install_deps(dependencies = TRUE)
           remotes::install_cran("rcmdcheck")
+          remotes::install_cran("covr")
         shell: Rscript {0}
 
       - name: Check
@@ -82,3 +83,11 @@ jobs:
         with:
           name: ${{ runner.os }}-r${{ matrix.config.r }}-results
           path: check
+
+  jobs:
+    test-coverage
+      runs-on: ubuntu-20.04
+        - name: Test coverage
+          needs: Check
+          run: covr::codecov()
+          shell: Rscript {0}
