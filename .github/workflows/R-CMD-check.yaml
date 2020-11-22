@@ -84,11 +84,7 @@ jobs:
           name: ${{ runner.os }}-r${{ matrix.config.r }}-results
           path: check
 
-  jobs:
-    test-coverage
-      runs-on: ubuntu-20.04
-        steps:
-          - name: Test coverage
-            needs: Check
-            run: covr::codecov()
-            shell: Rscript {0}
+      - name: Test coverage
+        needs: Check
+        run: covr::codecov()
+        shell: Rscript {0}
