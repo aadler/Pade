@@ -85,6 +85,5 @@ jobs:
           path: check
 
       - name: Test coverage
-        needs: Check
         run: covr::codecov()
         shell: Rscript {0}
