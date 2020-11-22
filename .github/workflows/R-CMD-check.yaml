@@ -87,7 +87,8 @@ jobs:
   jobs:
     test-coverage
       runs-on: ubuntu-20.04
-        - name: Test coverage
-          needs: Check
-          run: covr::codecov()
-          shell: Rscript {0}
+        steps:
+          - name: Test coverage
+            needs: Check
+            run: covr::codecov()
+            shell: Rscript {0}
