@@ -1,9 +1,8 @@
 <!-- badges: start -->
 [![CRAN Latest Version & Release](https://www.r-pkg.org/badges/version-last-release/Pade)](https://CRAN.R-project.org/package=Pade)
-[![](https://cranlogs.r-pkg.org/badges/Pade)]
+[![](http://cranlogs.r-pkg.org/badges/last-month/Pade)](https://cran.r-project.org/package=Pade)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2033/badge)](https://bestpractices.coreinfrastructure.org/projects/2033)
 [![R build status](https://github.com/aadler/Pade/workflows/R-CMD-check/badge.svg)](https://github.com/aadler/Pade/actions)
-[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/aadler/Pade?branch=master&svg=true)](https://ci.appveyor.com/project/aadler/Pade)
 [![Codecov test coverage](https://codecov.io/gh/aadler/Pade/branch/master/graph/badge.svg)](https://codecov.io/gh/aadler/Pade?branch=master)
 <!-- badges: end -->
 
