@@ -1,8 +1,8 @@
 Package: Pade
 Type: Package
 Title: Padé Approximant Coefficients
-Version: 1.0.3
-Date: 2020-11-10
+Version: 1.0.4
+Date: 2022-01-18
 Authors@R: c(person(given="Avraham", family="Adler",
     role=c("aut", "cph", "cre"), email="Avraham.Adler@gmail.com",
     comment = c(ORCID = "0000-0002-3039-0703")))
@@ -12,9 +12,8 @@ Description: Given a vector of Taylor series coefficients of sufficient length
     <ISBN:9780120748556>.
 License: GPL (>= 2) | BSD_2_clause + file LICENSE
 Imports: utils
-Suggests: testthat, covr
+Suggests: covr, tinytest
 URL: https://github.com/aadler/Pade
 BugReports: https://github.com/aadler/Pade/issues
 Encoding: UTF-8
 NeedsCompilation: no
-Config/testthat/edition: 3
