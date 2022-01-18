@@ -2,6 +2,15 @@
 \alias{NEWS}
 \title{NEWS file for the Pade package}
 
+\section{Changes in version 1.0.4 (2022-01-18)}{
+  \subsection{Changed}{
+    \itemize{
+      \item Converted tests to \code{tinytest} to reduce dependencies
+      \item Added DOI to citation
+    }
+  }
+}
+
 \section{Changes in version 1.0.3 (2020-11-10)}{
   \subsection{Fixed}{
     \itemize{
