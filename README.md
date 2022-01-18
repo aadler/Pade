@@ -73,7 +73,8 @@ in increasing order.
 If you use the package, please cite it as:
 
   Avraham Adler (2015). Pade: Padé Approximant Coefficients.
-  R package version 1.0.3. https://CRAN.R-project.org/package=Pade
+  R package version 1.0.4. https://CRAN.R-project.org/package=Pade
+  doi: 10.5281/zenodo.4270254
 
 A BibTeX entry for LaTeX users is:
 
@@ -82,8 +83,9 @@ A BibTeX entry for LaTeX users is:
     title = {Pade: Padé Approximant Coefficients},
     author = {Avraham Adler},
     year = {2015},
-    note = {R package version 1.0.3},
+    note = {R package version 1.0.4},
     url = {https://CRAN.R-project.org/package=Pade},
+    doi = {10.5281/zenodo.4270254},
   }
 ```
 ## Contributions
@@ -109,7 +111,7 @@ character lines, two-space indentations).
 Please provide valid .Rd files and **not** roxygen-style documentation.
 
 ### Tests
-Please review the current test suite and supply similar `testthat`-compatible
+Please review the current test suite and supply similar `tinytest`-compatible
 unit tests for all added functionality. 
 
 ### Submission
