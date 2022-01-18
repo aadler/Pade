@@ -1,0 +1,43 @@
+# -----------------------------------------------------------
+# CITATION file created with {cffr} R package, v0.2.1
+# See also: https://docs.ropensci.org/cffr/
+# -----------------------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "Pade" in publications use:'
+type: software
+license:
+- BSD-2-Clause
+- GPL-2.0-or-later
+title: 'Pade: Padé Approximant Coefficients'
+version: 1.0.4
+doi: 10.5281/zenodo.4270254
+abstract: Given a vector of Taylor series coefficients of sufficient length as input,
+  the function returns the numerator and denominator coefficients for the Padé approximant
+  of appropriate order (Baker, 1975) <ISBN:9780120748556>.
+authors:
+- family-names: Adler
+  given-names: Avraham
+  email: Avraham.Adler@gmail.com
+  orcid: https://orcid.org/0000-0002-3039-0703
+preferred-citation:
+  type: manual
+  title: 'Pade: Padé Approximant Coefficients'
+  authors:
+  - family-names: Adler
+    given-names: Avraham
+    email: Avraham.Adler@gmail.com
+    orcid: https://orcid.org/0000-0002-3039-0703
+  year: '2015'
+  url: https://CRAN.R-project.org/package=Pade
+  doi: 10.5281/zenodo.4270254
+  notes: R package version 1.0.4
+repository: https://CRAN.R-project.org/package=Pade
+repository-code: https://github.com/aadler/Pade
+url: https://github.com/aadler/Pade
+date-released: '2022-01-18'
+contact:
+- family-names: Adler
+  given-names: Avraham
+  email: Avraham.Adler@gmail.com
+  orcid: https://orcid.org/0000-0002-3039-0703
