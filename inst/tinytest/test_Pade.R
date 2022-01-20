@@ -37,3 +37,7 @@ expect_error(Pade(4.2, 4, LOG1P_0_Taylor),
              "Polynomial orders need to be integers.")
 expect_error(Pade(4, 3.4, LOG1P_0_Taylor),
              "Polynomial orders need to be integers.")
+
+## Test CITATION
+expect_true(any(grepl(packageVersion('lamW'), toBibtex(citation('lamW')),
+                      fixed = TRUE)))
