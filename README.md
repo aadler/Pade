@@ -25,19 +25,16 @@ of order \(M\), such that \(\frac{P_L(x)}{Q_M(x)}\), called the Padé approximan
 of order \([L/M]\), "agrees" with the original function in order \(L + M\).
 More precisely, given
 
-\[
 \begin{equation}
 A(x) = \sum_{j=0}^\infty a_j x^j 
 \end{equation}
-\]
 
 the Padé approximant of order \([L/M]\) to \(A(x)\) has the property that
 
-\[
 \begin{equation}
 A(x) - \frac{P_L(x)}{Q_M(x)} = \mathcal{O}\left(x^{L + M + 1}\right) 
 \end{equation}
-\]
+
 
 The Padé approximant consistently has a wider radius of convergence than its
 parent Taylor series, often converging where the Taylor series does not. This
