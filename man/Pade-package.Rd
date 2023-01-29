@@ -18,5 +18,5 @@ The DESCRIPTION file:
 
 Maintainer: \packageMaintainer{Pade}
 }
-\keyword{ package }
+\keyword{package}
 \keyword{NumericalMathematics}

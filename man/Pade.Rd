@@ -31,7 +31,8 @@ The \eqn{\left[L / M\right]}{[L / M]} Padé approximant to a Taylor series
 where \eqn{P_L(x)} is of order \eqn{L} and \eqn{Q_M(x)} is of order \eqn{M}. In
 this case:
 
-\deqn{A(x) - \frac{P_L(x)}{Q_M(x)} = \mathcal{O}\left(x^{L + M + 1}\right)}{A(x) - P_L(x) / Q_M(X) = O(x^{L + M + 1})}
+\deqn{A(x) - \frac{P_L(x)}{Q_M(x)} = \mathcal{O}\left(x^{L + M + 1}\right)}{A(x)
+- P_L(x) / Q_M(X) = O(x^{L + M + 1})}
 
 When \eqn{q_0} is defined to be \eqn{1}, there is a unique solution to the
 system of linear equations which can be used to calculate the coefficients.
@@ -61,17 +62,19 @@ and denominator coefficients respectively, as long as
   This package provides similar functionality to the \code{pade} function in the
   \code{pracma} package. However, it does not allow computation of coefficients
   beyond the supplied Taylor coefficients and it expects its input and provides
-  its output in ascending, instead of descending, order.
+  its output in ascending---instead of descending---order.
 }
 \examples{
-A <- 1 / factorial(seq_len(11) - 1) ## Taylor sequence for e^x up to x^{10} around x_0 = 0
+A <- 1 / factorial(seq_len(11L) - 1) ## Taylor sequence for e^x up to x^{10} around x_0 = 0
 Z <- Pade(5, 5, A)
-print(Z)                            ## Padé approximant of order [5 / 5]
-x <- -.01                           ## Test value
-Actual <- exp(x)                    ## Proper value
+print(Z)                             ## Padé approximant of order [5 / 5]
+x <- -.01                            ## Test value
+Actual <- exp(x)                     ## Proper value
 print(Actual, digits = 16)
-Estimate <- sum(Z[[1]] * x ^ (seq_along(Z[[1]]) - 1)) / sum(Z[[2]] * x ^ (seq_along(Z[[2]]) - 1))
-print(Estimate, digits = 16)        ## Approximant value
+Estimate <- sum(Z[[1L]] * x ^ (seq_along(Z[[1L]]) - 1)) /
+    sum(Z[[2L]] * x ^ (seq_along(Z[[2L]]) - 1))
+print(Estimate, digits = 16)         ## Approximant value
 all.equal(Actual, Estimate)
 }
+
 \keyword{NumericalMathematics}
