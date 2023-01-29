@@ -70,7 +70,7 @@ in increasing order.
 If you use the package, please cite it as:
 
   Avraham Adler (2015). Pade: Padé Approximant Coefficients.
-  R package version 1.0.4. https://CRAN.R-project.org/package=Pade
+  R package version 1.0.4.9000. https://CRAN.R-project.org/package=Pade
   doi: 10.5281/zenodo.4270254
 
 A BibTeX entry for LaTeX users is:
@@ -80,7 +80,7 @@ A BibTeX entry for LaTeX users is:
     title = {Pade: Padé Approximant Coefficients},
     author = {Avraham Adler},
     year = {2015},
-    note = {R package version 1.0.4},
+    note = {R package version 1.0.4.9000},
     url = {https://CRAN.R-project.org/package=Pade},
     doi = {10.5281/zenodo.4270254},
   }
@@ -130,11 +130,11 @@ the lead maintainer.
 ## Roadmap
 ### Major
 
- * There are no plans for major changes in 2022 and subsequent
+ * There are no plans for major changes at this time
  
 ### Minor
- * Achieve OpenSSF Best Practices
- [silver](https://bestpractices.coreinfrastructure.org/en/criteria/1) status
+ 
+ * There are no plans for minor changes at this time
  
 ## Security
 ### Expectations

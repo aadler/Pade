@@ -2,6 +2,14 @@
 \alias{NEWS}
 \title{NEWS file for the Pade package}
 
+\section{Changes in version 1.0.4.9000 (2023-02-29)}{
+  \subsection{Changed}{
+    \itemize{
+      \item Updated help
+    }
+  }
+}
+
 \section{Changes in version 1.0.4 (2022-01-18)}{
   \subsection{Changed}{
     \itemize{
