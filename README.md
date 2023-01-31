@@ -70,7 +70,7 @@ in increasing order.
 If you use the package, please cite it as:
 
   Avraham Adler (2015). Pade: Padé Approximant Coefficients.
-  R package version 1.0.4.9000. https://CRAN.R-project.org/package=Pade
+  R package version 1.0.5. https://CRAN.R-project.org/package=Pade
   doi: 10.5281/zenodo.4270254
 
 A BibTeX entry for LaTeX users is:
@@ -80,7 +80,7 @@ A BibTeX entry for LaTeX users is:
     title = {Pade: Padé Approximant Coefficients},
     author = {Avraham Adler},
     year = {2015},
-    note = {R package version 1.0.4.9000},
+    note = {R package version 1.0.5},
     url = {https://CRAN.R-project.org/package=Pade},
     doi = {10.5281/zenodo.4270254},
   }
