@@ -6,6 +6,7 @@
   \subsection{Changed}{
     \itemize{
       \item Updated help
+      \item Updated Github actions
     }
   }
 }
