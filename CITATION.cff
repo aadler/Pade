@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# CITATION file created with {cffr} R package, v0.2.1
+# CITATION file created with {cffr} R package, v0.4.1
 # See also: https://docs.ropensci.org/cffr/
 # -----------------------------------------------------------
  
@@ -10,7 +10,7 @@ license:
 - BSD-2-Clause
 - GPL-2.0-or-later
 title: 'Pade: Padé Approximant Coefficients'
-version: 1.0.4
+version: 1.0.5
 doi: 10.5281/zenodo.4270254
 abstract: Given a vector of Taylor series coefficients of sufficient length as input,
   the function returns the numerator and denominator coefficients for the Padé approximant
@@ -31,11 +31,11 @@ preferred-citation:
   year: '2015'
   url: https://CRAN.R-project.org/package=Pade
   doi: 10.5281/zenodo.4270254
-  notes: R package version 1.0.4
+  notes: R package version 1.0.5
 repository: https://CRAN.R-project.org/package=Pade
 repository-code: https://github.com/aadler/Pade
 url: https://github.com/aadler/Pade
-date-released: '2022-01-18'
+date-released: '2023-02-01'
 contact:
 - family-names: Adler
   given-names: Avraham

@@ -2,11 +2,12 @@
 \alias{NEWS}
 \title{NEWS file for the Pade package}
 
-\section{Changes in version 1.0.4.9000 (2023-02-29)}{
+\section{Changes in version 1.0.5 (2023-02-01)}{
   \subsection{Changed}{
     \itemize{
       \item Updated help
       \item Updated Github actions
+      \item Made code more consistent with style guide
     }
   }
 }
