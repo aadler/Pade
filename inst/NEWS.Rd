@@ -8,6 +8,7 @@
       \item Updated help
       \item Updated Github actions
       \item Made code more consistent with style guide
+      \item CITATION converted to use \code{bibentry} at CRAN request
     }
   }
 }
