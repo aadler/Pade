@@ -1,3 +1,6 @@
+# Copyright (c) 2015, Avraham Adler All rights reserved
+# SPDX-License-Identifier: BSD-2-Clause OR GPL-2.0-or-later
+
 tol <- sqrt(.Machine$double.eps)
 # Inputs and Expected Outputs
 exp_0_taylor <- 1 / factorial(seq_len(11) - 1)

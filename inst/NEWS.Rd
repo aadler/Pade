@@ -1,3 +1,6 @@
+% Copyright (c) 2015, Avraham Adler All rights reserved
+% SPDX-License-Identifier: BSD-2-Clause OR GPL-2.0-or-later
+
 \name{NEWS}
 \alias{NEWS}
 \title{NEWS file for the Pade package}
