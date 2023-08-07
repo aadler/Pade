@@ -1,10 +1,11 @@
 <!-- badges: start -->
 [![CRAN Latest Version & Release](https://www.r-pkg.org/badges/version-last-release/Pade)](https://CRAN.R-project.org/package=Pade)
 [![](http://cranlogs.r-pkg.org/badges/last-month/Pade)](https://cran.r-project.org/package=Pade)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4270254.svg)](https://doi.org/10.5281/zenodo.4270254)
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2033/badge)](https://bestpractices.coreinfrastructure.org/projects/2033)
+[![](http://cranlogs.r-pkg.org/badges/grand-total/Pade)](https://cran.r-project.org/package=Pade)
 [![R-CMD-check](https://github.com/aadler/Pade/workflows/R-CMD-check/badge.svg)](https://github.com/aadler/Pade/actions)
 [![Codecov test coverage](https://codecov.io/gh/aadler/Pade/branch/master/graph/badge.svg)](https://app.codecov.io/gh/aadler/Pade?branch=master)
+[![OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/projects/2033/badge)](https://bestpractices.coreinfrastructure.org/projects/2033)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4270254.svg)](https://doi.org/10.5281/zenodo.4270254)
 <!-- badges: end -->
 
 # Padé
@@ -94,7 +95,7 @@ This project attempts to follow [Semantic Versioning](https://semver.org/)
 
 ### Changelog
 This project attempts to follow the changelog system at
-[Keep a CHANGELOG](https://keepachangelog.com/)
+[Keep a Changelog](https://keepachangelog.com/)
 
 ### Dependencies
 This project intends to have as few dependencies as possible. Please consider
@@ -139,8 +140,9 @@ the lead maintainer.
 ## Security
 ### Expectations
 This package is a calculation engine and requires no secrets or private
-information. It also has no compiled code. Dissemination is handled by CRAN.
-Bugs are reported via the tracker and handled as soon as possible.
+information. It is checked for memory leaks prior to releases to CRAN using
+ASAN/UBSAN. Dissemination is handled by CRAN. Bugs are reported via the tracker
+and handled as soon as possible.
 
 ### Assurance
 The threat model is that a malicious actor would "poison" the package code by
