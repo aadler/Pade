@@ -1,2 +1,2 @@
-exportPattern("^[[:alpha:]]+")
 importFrom(utils, head, tail)
+export(Pade)
