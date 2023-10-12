@@ -1,3 +1,7 @@
+---
+title: Package Padé
+---
+
 <!-- badges: start -->
 [![CRAN Latest Version & Release](https://www.r-pkg.org/badges/version-last-release/Pade)](https://CRAN.R-project.org/package=Pade)
 [![](http://cranlogs.r-pkg.org/badges/last-month/Pade)](https://cran.r-project.org/package=Pade)
@@ -8,7 +12,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4270254.svg)](https://doi.org/10.5281/zenodo.4270254)
 <!-- badges: end -->
 
-# Padé
 ## Mathematics
 ### Introduction
 For a given function, its
@@ -69,11 +72,11 @@ in increasing order.
 
 ## Citation
 If you use the package, please cite it per
-[CITATION](https://CRAN.R-project.org/package=Pade/citation.html)
+[CITATION](https://CRAN.R-project.org/package=Pade/citation.html).
 
 ## Contributions
 Please see
-[CONTRIBUTING.md](https://github.com/aadler/Pade/blob/master/CONTRIBUTING.md)
+[CONTRIBUTING.md](https://github.com/aadler/Pade/blob/master/CONTRIBUTING.md).
 
 ## Roadmap
 ### Major
@@ -85,5 +88,6 @@ Please see
  * There are no plans for minor changes at this time
 
 ## Security
-Please see [SECURITY.md](https://github.com/aadler/Pade/blob/master/SECURITY.md)
+Please see
+[SECURITY.md](https://github.com/aadler/Pade/blob/master/SECURITY.md).
  
