@@ -6,12 +6,14 @@
 \encoding{UTF-8}
 \title{NEWS file for the Pade package}
 
-\section{Changes in version 1.0.6 (2023-08-07)}{
+\section{Changes in version 1.0.6 (2023-10-12)}{
   \subsection{Changed}{
     \itemize{
       \item Limited exports.
-      \item Updated README.
       \item Added \acronym{SPDX} codes to source files.
+      \item Refactored \file{README} to split out security and contributions
+      wordings to their own respective files and link the citation to the file
+      on \acronym{CRAN}.
     }
   }
 }
