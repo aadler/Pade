@@ -68,24 +68,9 @@ coefficients of the Padé approximant numerator and denominator respectively,
 in increasing order.
 
 ## Citation
-If you use the package, please cite it as:
+If you use the package, please cite it per
+[CITATION](https://CRAN.R-project.org/package=Pade/citation.html)
 
-  Avraham Adler (2015). Pade: Padé Approximant Coefficients.
-  R package version 1.0.6. https://CRAN.R-project.org/package=Pade
-  doi: 10.5281/zenodo.4270254
-
-A BibTeX entry for LaTeX users is:
-
-```
-  @Manual{,
-    title = {Pade: Padé Approximant Coefficients},
-    author = {Avraham Adler},
-    year = {2015},
-    note = {R package version 1.0.6},
-    url = {https://CRAN.R-project.org/package=Pade},
-    doi = {10.5281/zenodo.4270254},
-  }
-```
 ## Contributions
 Please see
 [CONTRIBUTING.md](https://github.com/aadler/Pade/blob/master/CONTRIBUTING.md)
