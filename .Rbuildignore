@@ -5,6 +5,6 @@
 ^codecov\.yml$
 ^\.github$
 ^CITATION\.cff$
-^CodeofConduct.md$
+^CODE_OF_CONDUCT.md$
 ^SECURITY.md$
 ^CONTRIBUTING.md$
