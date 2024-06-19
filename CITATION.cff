@@ -31,7 +31,7 @@ preferred-citation:
   year: '2015'
   url: https://CRAN.R-project.org/package=Pade
   doi: 10.32614/CRAN.package.Pade
-  notes: R package version 1.0.6
+  notes: R package version 1.0.7
 repository: https://CRAN.R-project.org/package=Pade
 repository-code: https://github.com/aadler/Pade
 url: https://github.com/aadler/Pade
