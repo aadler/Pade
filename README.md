@@ -9,7 +9,6 @@ title: Package Padé
 [![R-CMD-check](https://github.com/aadler/Pade/workflows/R-CMD-check/badge.svg)](https://github.com/aadler/Pade/actions)
 [![Codecov test coverage](https://codecov.io/gh/aadler/Pade/branch/master/graph/badge.svg)](https://app.codecov.io/gh/aadler/Pade?branch=master)
 [![OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/projects/2033/badge)](https://bestpractices.coreinfrastructure.org/projects/2033)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4270254.svg)](https://doi.org/10.5281/zenodo.4270254)
 <!-- badges: end -->
 
 ## Mathematics

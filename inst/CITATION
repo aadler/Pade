@@ -9,6 +9,6 @@ bibentry(bibtype     = "Manual",
          title       = "Pade: Padé Approximant Coefficients",
          year         = "2015",
          url          = "https://CRAN.R-project.org/package=Pade",
-         doi          = "10.5281/zenodo.4270254",
+         doi          = "10.32614/CRAN.package.Pade",
          note         = "R package version 1.0.6"
 )
