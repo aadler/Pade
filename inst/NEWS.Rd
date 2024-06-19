@@ -11,6 +11,7 @@
     \itemize{
       \item Use native \acronym{CRAN} \acronym{DOI}.
       \item Update \file{README} and documentation.
+      \item Add package metadata unit test.
     }
   }
 }
