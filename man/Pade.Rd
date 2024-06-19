@@ -63,12 +63,15 @@ and returns a list of two elements, \code{Px} and \code{Qx}, the
 }
 \seealso{
   This package provides similar functionality to the \code{pade} function in the
-  \code{pracma} package. However, it does not allow computation of coefficients
+  \pkg{pracma} package. However, it does not allow computation of coefficients
   beyond the supplied Taylor coefficients and it expects its input and provides
   its output in ascending---instead of descending---order.
+
+  See the \pkg{minimaxApprox} package for polynomial and rational minimax
+  approximations to functions.
 }
 \examples{
-A <- 1 / factorial(seq_len(11L) - 1) ## Taylor sequence for e^x up to x^{10} around x_0 = 0
+A <- 1 / factorial(0:10) ## Taylor sequence for e^x up to x^{10} around x_0 = 0
 Z <- Pade(5, 5, A)
 print(Z)                             ## Padé approximant of order [5 / 5]
 x <- -.01                            ## Test value
