@@ -12,6 +12,7 @@
       \item Use native \acronym{CRAN} \acronym{DOI}.
       \item Update \file{README} and documentation.
       \item Add package metadata unit test.
+      \item Set up new version of \pkg{rhub} checking.
     }
   }
 }
