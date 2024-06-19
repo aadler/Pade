@@ -7,7 +7,7 @@ title: Package Padé
 [![](http://cranlogs.r-pkg.org/badges/last-month/Pade)](https://cran.r-project.org/package=Pade)
 [![](http://cranlogs.r-pkg.org/badges/grand-total/Pade)](https://cran.r-project.org/package=Pade)
 [![R-CMD-check](https://github.com/aadler/Pade/workflows/R-CMD-check/badge.svg)](https://github.com/aadler/Pade/actions)
-[![Codecov test coverage](https://codecov.io/gh/aadler/Pade/branch/master/graph/badge.svg)](https://app.codecov.io/gh/aadler/Pade?branch=master)
+[![Codecov test coverage](https://codecov.io/gh/aadler/Pade/graph/badge.svg?token=471DIW465K)](https://app.codecov.io/gh/aadler/Pade)
 [![OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/projects/2033/badge)](https://bestpractices.coreinfrastructure.org/projects/2033)
 <!-- badges: end -->
 
@@ -89,4 +89,3 @@ Please see
 ## Security
 Please see
 [SECURITY.md](https://github.com/aadler/Pade/blob/master/SECURITY.md).
- 
