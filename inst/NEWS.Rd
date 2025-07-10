@@ -6,6 +6,14 @@
 \encoding{UTF-8}
 \title{NEWS file for the Pade package}
 
+\section{Changes in version 1.0.8 (2025-07-10)}{
+  \subsection{Fixed}{
+    \itemize{
+      \item Corrected and streamlined internal unit tests.
+    }
+  }
+}
+
 \section{Changes in version 1.0.7 (2024-06-19)}{
   \subsection{Changed}{
     \itemize{
