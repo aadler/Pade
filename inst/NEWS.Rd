@@ -10,6 +10,7 @@
   \subsection{Fixed}{
     \itemize{
       \item Corrected and streamlined internal unit tests.
+      \item Removed explicit return from \code{Pade} function.
     }
   }
 }

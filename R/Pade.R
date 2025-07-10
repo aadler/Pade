@@ -18,5 +18,5 @@ Pade <- function(L, M, A) { #nolint
   padeCoeff <- solve(PQ, -head(A, matSize))
   numer <- head(padeCoeff, lPlus1)
   denom <- c(1, tail(padeCoeff, M))
-  return(list(Px = numer, Qx = denom))
+  list(Px = numer, Qx = denom)
 }
