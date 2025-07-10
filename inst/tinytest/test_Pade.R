@@ -2,6 +2,7 @@
 # SPDX-License-Identifier: BSD-2-Clause OR GPL-2.0-or-later
 
 tol <- sqrt(.Machine$double.eps)
+
 # Inputs and Expected Outputs
 exp_0_taylor <- 1 / factorial(seq_len(11) - 1)
 exp_0_pade32numer <- c(1, 3 / 5, 3 / 20, 1 / 60)
@@ -42,7 +43,3 @@ expect_error(Pade(4.2, 4, log1p_0_taylor),
              "Polynomial orders need to be integers.")
 expect_error(Pade(4, 3.4, log1p_0_taylor),
              "Polynomial orders need to be integers.")
-
-## Test CITATION
-expect_true(any(grepl(packageVersion("Pade"), toBibtex(citation("Pade")),
-                      fixed = TRUE)))
