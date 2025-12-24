@@ -1,7 +1,7 @@
 # Copyright (c) 2015, Avraham Adler All rights reserved
 # SPDX-License-Identifier: BSD-2-Clause OR GPL-2.0-or-later
 
-Pade <- function(L, M, A) { #nolint
+Pade <- function(L, M, A) { # nolint object_name_linter
   if (floor(L) != L || floor(M) != M) {
     stop("Polynomial orders need to be integers.")
   }
