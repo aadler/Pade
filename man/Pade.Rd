@@ -83,4 +83,7 @@ print(Estimate, digits = 16)         ## Approximant value
 all.equal(Actual, Estimate)
 }
 
-\keyword{NumericalMathematics}
+\keyword{math}
+\keyword{algebra}
+
+\concept{NumericalMathematics}
