@@ -10,5 +10,5 @@ bibentry(bibtype     = "Manual",
          year         = "2015",
          url          = "https://CRAN.R-project.org/package=Pade",
          doi          = "10.32614/CRAN.package.Pade",
-         note         = "R package version 1.0.8"
+         note         = "R package version 1.0.9"
 )
