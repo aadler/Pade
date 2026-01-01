@@ -6,6 +6,14 @@
 \encoding{UTF-8}
 \title{NEWS file for the Pade package}
 
+\section{Changes in version 1.0.9 (2026-01-07)}{
+  \subsection{Fixed}{
+    \itemize{
+      \item Minor corrections to code and comments. No user-facing changes.
+    }
+  }
+}
+
 \section{Changes in version 1.0.8 (2025-07-10)}{
   \subsection{Fixed}{
     \itemize{
