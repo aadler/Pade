@@ -11,12 +11,17 @@ the function will calculate the \enc{Padé}{Pade} \eqn{\left[L / M\right]}{
 [L / M]} approximant coefficients so long as \eqn{L + M \leq T}{L + M ≤ T}.
 }
 \usage{
-Pade(L, M, A)
+Pade(L, M, A, method = c("qr", "solve"), tol = NULL)
 }
 \arguments{
-  \item{L}{Order of \enc{Padé}{Pade} numerator}
-  \item{M}{Order of \enc{Padé}{Pade} denominator}
-  \item{A}{vector of Taylor series coefficients, starting at \eqn{x^0}}
+  \item{L}{\strong{numeric}; scalar order of \enc{Padé}{Pade} numerator}
+  \item{M}{\strong{numeric}; scalar order of \enc{Padé}{Pade} denominator}
+  \item{A}{\strong{numeric}; vector of Taylor series coefficients, starting at
+  \eqn{x^0}}
+  \item{method}{\strong{character}; selects linear-equation solver algorithm.
+  \code{qr} is more robust to ill-conditioned matrices. \code{solve} is faster.}
+  \item{tol}{\strong{numeric}; the tolerance passed to \code{qr.solve}. Defaults
+  to \code{NULL} relying on the default value in \code{qr.solve}.}
 }
 \details{
 As the Taylor series expansion is the \dQuote{best} polynomial approximation to
