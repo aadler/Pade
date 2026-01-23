@@ -23,6 +23,7 @@ sin_taylor <- c(0, 1 / factorial(1), 0, -1 / factorial(3), 0, 1 / factorial(5),
 sin_pade56numer <- c(0, 1, 0, -2363 / 18183, 0, 12671 / 4363920)
 sin_pade56denom <- c(1, 0, 445 / 12122, 0, 601 / 872784, 0, 121 / 16662240)
 sin_pade56_est <- Pade(5, 6, sin_taylor)
+sin_pade56_est_solve <- Pade(5, 6, sin_taylor, method = "solve")
 
 # Testing Accuracy
 expect_equal(exp_0_pade32_est[[1]], exp_0_pade32numer, tolerance = tol)
@@ -33,6 +34,7 @@ expect_equal(log1p_0_pade33_est[[1]], log1p_0_pade33numer, tolerance = tol)
 expect_equal(log1p_0_pade33_est[[2]], log1p_0_pade33denom, tolerance = tol)
 expect_equal(sin_pade56_est[[1]], sin_pade56numer, tolerance = tol)
 expect_equal(sin_pade56_est[[2]], sin_pade56denom, tolerance = tol)
+expect_equal(sin_pade56_est_solve, sin_pade56_est, tolerance = tol)
 
 # Testing Errors
 expect_error(Pade(4, 4, log1p_0_taylor),
@@ -41,5 +43,5 @@ expect_error(Pade(7, 6, sin_taylor),
              "Not enough Taylor series coefficients provided.")
 expect_error(Pade(4.2, 4, log1p_0_taylor),
              "Polynomial orders need to be non-negative integers.")
-expect_error(Pade(4, 3.4, log1p_0_taylor),
+expect_error(Pade(-4, 3.4, log1p_0_taylor),
              "Polynomial orders need to be non-negative integers.")
