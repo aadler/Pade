@@ -28,8 +28,6 @@ Pade <- function(L, M, A, method = c("qr", "solve"), tol = 1e-7) { # nolint obje
     padeCoeff <- qr.solve(PQ, -headA, tol = tol)
   }
 
-  padeCoeff <- solve(PQ, -headA)
-
   numer <- padeCoeff[seq_len(lPlus1)]
   denom <- c(1, padeCoeff[(lPlus1 + 1L):(lPlus1 + M)])
   list(Px = numer, Qx = denom)
