@@ -11,7 +11,7 @@ the function will calculate the \enc{Padé}{Pade} \eqn{\left[L / M\right]}{
 [L / M]} approximant coefficients so long as \eqn{L + M \leq T}{L + M ≤ T}.
 }
 \usage{
-Pade(L, M, A, method = c("qr", "solve"), tol = NULL)
+Pade(L, M, A, method = c("qr", "solve"), tol = 1e-7)
 }
 \arguments{
   \item{L}{\strong{numeric}; scalar order of \enc{Padé}{Pade} numerator}
