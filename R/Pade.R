@@ -1,7 +1,7 @@
 # Copyright (c) 2015, Avraham Adler All rights reserved
 # SPDX-License-Identifier: BSD-2-Clause OR GPL-2.0-or-later
 
-Pade <- function(L, M, A, method = c("qr", "solve"), tol = NULL) { # nolint object_name_linter
+Pade <- function(L, M, A, method = c("qr", "solve"), tol = 1e-7) { # nolint object_name_linter
   if (L < 0 || M < 0 || floor(L) != L || floor(M) != M) {
     stop("Polynomial orders need to be non-negative integers.")
   }

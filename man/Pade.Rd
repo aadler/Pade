@@ -21,7 +21,7 @@ Pade(L, M, A, method = c("qr", "solve"), tol = NULL)
   \item{method}{\strong{character}; selects linear-equation solver algorithm.
   \code{qr} is more robust to ill-conditioned matrices. \code{solve} is faster.}
   \item{tol}{\strong{numeric}; the tolerance passed to \code{qr.solve}. Defaults
-  to \code{NULL} relying on the default value in \code{qr.solve}.}
+  to \code{1e-7}, the default value in \code{qr.solve}.}
 }
 \details{
 As the Taylor series expansion is the \dQuote{best} polynomial approximation to
