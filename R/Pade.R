@@ -20,7 +20,6 @@ Pade <- function(L, M, A, method = c("qr", "solve"), tol = NULL) { # nolint obje
     PQ[(i + 1):matSize, lPlus1 + i] <- headA[1:(matSize - i)]
   }
 
-  if (is.null(tol)) tol <- .Machine$double.eps
   method <- match.arg(method)
 
   if (method == "solve") {
