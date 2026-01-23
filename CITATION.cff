@@ -10,7 +10,7 @@ license:
 - BSD-2-Clause
 - GPL-2.0-or-later
 title: 'Pade: Padé Approximant Coefficients'
-version: 1.0.9
+version: 1.1.0
 doi: 10.32614/CRAN.package.Pade
 identifiers:
 - type: doi
@@ -34,11 +34,11 @@ preferred-citation:
   year: '2015'
   url: https://CRAN.R-project.org/package=Pade
   doi: 10.32614/CRAN.package.Pade
-  notes: R package version 1.0.9
+  notes: R package version 1.1.0
 repository: https://CRAN.R-project.org/package=Pade
 repository-code: https://github.com/aadler/Pade
 url: https://github.com/aadler/Pade
-date-released: '2026-01-07'
+date-released: '2026-02-07'
 contact:
 - family-names: Adler
   given-names: Avraham
