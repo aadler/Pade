@@ -6,6 +6,26 @@
 \encoding{UTF-8}
 \title{NEWS file for the Pade package}
 
+\section{Changes in version 1.1.0 (2026-02-07)}{
+\subsection{Changed}{
+    \itemize{
+      \item \code{Pade} now uses \code{qr.solve} as the default method as it is
+      more robust to ill-conditioned matrices than is the former default,
+      \code{solve}.
+      \item Other code tightening, such as hoisting of variables out of loops
+      and reducing memory allocations.
+    }
+  }
+\subsection{Added}{
+    \itemize{
+      \item As \code{qr.solve} is between 2--3 times slower (in microseconds)
+      than is \code{solve}, a \code{method} variable has been added to allow the
+      user to have the algorithm use \code{solve} in cases where speed is of the
+      essence and the matrices can be assumed to be well-conditioned enough.
+    }
+  }
+}
+
 \section{Changes in version 1.0.9 (2026-01-07)}{
   \subsection{Fixed}{
     \itemize{
