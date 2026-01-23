@@ -40,6 +40,6 @@ expect_error(Pade(4, 4, log1p_0_taylor),
 expect_error(Pade(7, 6, sin_taylor),
              "Not enough Taylor series coefficients provided.")
 expect_error(Pade(4.2, 4, log1p_0_taylor),
-             "Polynomial orders need to be integers.")
+             "Polynomial orders need to be non-negative integers.")
 expect_error(Pade(4, 3.4, log1p_0_taylor),
-             "Polynomial orders need to be integers.")
+             "Polynomial orders need to be non-negative integers.")
