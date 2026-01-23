@@ -11,7 +11,6 @@ Description: Given a vector of Taylor series coefficients of sufficient length
     for the Padé approximant of appropriate order (Baker, 1975)
     <ISBN:9780120748556>.
 License: GPL (>= 2) | BSD_2_clause + file LICENSE
-Imports: utils
 Suggests: covr, tinytest
 URL: https://github.com/aadler/Pade
 BugReports: https://github.com/aadler/Pade/issues

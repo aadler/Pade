@@ -1,4 +1,1 @@
-importFrom(utils,
-           head,
-           tail)
 export(Pade)
