@@ -10,8 +10,10 @@ Pade <- function(L, M, A) { # nolint object_name_linter
   if (length(A) < matSize) {
     stop("Not enough Taylor series coefficients provided.")
   }
+
   PQ <- matrix(0, ncol = matSize, nrow = matSize)
-  PQ[1:lPlus1, 1:lPlus1] <- -diag(lPlus1)
+  PQ[cbind(seq_len(lPlus1), seq_len(lPlus1))] <- -1
+
   for (i in seq_len(M)) {
     PQ[, lPlus1 + i] <- c(rep.int(0, i), head(A, (matSize - i)))
   }
