@@ -6,22 +6,22 @@
 \encoding{UTF-8}
 \title{NEWS file for the Pade package}
 
-\section{Changes in version 1.1.0 (2026-02-07)}{
+\section{Changes in version 1.1.0 (2026-03-25)}{
 \subsection{Changed}{
     \itemize{
-      \item \code{Pade} now uses \code{qr.solve} as the default method as it is
-      more robust to ill-conditioned matrices than is the former default,
-      \code{solve}.
-      \item Internal performance improvements, including hoisting loop-invariant
-      computations and reducing temporary memory allocations.
+      \item \code{Pade} now defaults to \code{method = "qr"} (using
+      \code{qr.solve}) as it is more numerically robust to ill-conditioned
+      Taylor-coefficient matrices than is the former default, \code{solve}.
+      \item Minor internal performance improvements.
     }
   }
 \subsection{Added}{
     \itemize{
-      \item As \code{qr.solve} can be slower than \code{solve} for certain
-      systems, a \code{method} variable has been added to allow the user to use
+      \item New \code{method} argument has been added to allow the user to use
       \code{solve} in cases where speed is of the essence and the matrices are
       sufficiently well-conditioned.
+      \item New optional \code{tol} argument which can be passed to
+      \code{qr.solve} when using the (default) \acronym{QR} solver.
     }
   }
 }
@@ -150,7 +150,7 @@
     \itemize{
       \item Correct the example to evaluate from \eqn{x^0}, not \eqn{x^1},
       by appending \code{-1} to the \code{seq_along} call (Issue #1:
-      Thanks to Anonymous. Note: In move to github, this issue could not be
+      Thanks to Anonymous. Note: In move to GitHub, this issue could not be
       transferred).
     }
   }
